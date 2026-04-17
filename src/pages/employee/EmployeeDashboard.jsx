@@ -23,7 +23,7 @@ export default function EmployeeDashboard() {
   const totalTipOut = (parseFloat(tips.tipOutBusser) || 0) + (parseFloat(tips.tipOutHost) || 0)
 
   return (
-    <div style={{ fontFamily: 'Montserrat, sans-serif', background: CREAM, minHeight: '100vh', maxWidth: 420, margin: '0 auto' }}>
+    <div style={{ fontFamily: 'Montserrat, sans-serif', background: CREAM, minHeight: '100vh' }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
