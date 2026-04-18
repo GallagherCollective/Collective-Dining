@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Save, CalendarDays, Clock } from 'lucide-react'
+import { Save, CalendarDays, Clock, CreditCard } from 'lucide-react'
 
 const COPPER = '#A06535'
 const DARK = '#2B2B2B'
@@ -101,6 +101,9 @@ export default function ManagerDashboard() {
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <button onClick={() => navigate('/cc-tips')} style={{ background: 'transparent', border: '1px solid rgba(217,195,163,0.2)', borderRadius: 6, padding: '7px 14px', fontSize: 11, color: 'rgba(217,195,163,0.6)', cursor: 'pointer', fontFamily: 'Montserrat, sans-serif', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <CreditCard size={13} /> CC Tips
+          </button>
           <button onClick={() => navigate('/scheduler')} style={{ background: 'transparent', border: '1px solid rgba(217,195,163,0.2)', borderRadius: 6, padding: '7px 14px', fontSize: 11, color: 'rgba(217,195,163,0.6)', cursor: 'pointer', fontFamily: 'Montserrat, sans-serif', display: 'flex', alignItems: 'center', gap: 6 }}>
             <CalendarDays size={13} /> Weekly Scheduler
           </button>
