@@ -37,7 +37,7 @@ export default function EmployeeDashboard() {
           <div style={{ width: 32, height: 32, borderRadius: '50%', border: '2px solid ' + COPPER, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Playfair Display, serif', fontSize: 11, fontWeight: 700, color: COPPER }}>CH</div>
           <div>
             <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 13, fontWeight: 600, color: '#fff' }}>Collective Dining</div>
-            <div style={{ fontSize: 9, color: 'rgba(217,195,163,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Power's Restaurant</div>
+            <div style={{ fontSize: 9, color: 'rgba(217,195,163,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JM Gerrish</div>
           </div>
         </div>
         <div style={{ textAlign: 'right' }}>

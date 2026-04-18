@@ -63,7 +63,7 @@ export default function Landing() {
         <div style={{ position: 'relative' }}>
           <div className="float" style={{ background: '#fff', border: '1px solid #EDE6DA', borderRadius: 16, padding: '1.5rem', boxShadow: '0 16px 48px rgba(43,43,43,0.1)' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #EDE6DA' }}>
-              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 14, fontWeight: 600, color: DARK }}>Power's Restaurant</div>
+              <div style={{ fontFamily: 'Playfair Display, serif', fontSize: 14, fontWeight: 600, color: DARK }}>JM Gerrish</div>
               <div style={{ fontSize: 11, fontWeight: 600, color: '#4A7C59', background: 'rgba(74,124,89,0.1)', padding: '3px 10px', borderRadius: 20 }}>Today - Live</div>
             </div>
             {[
