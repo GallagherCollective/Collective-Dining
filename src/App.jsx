@@ -6,6 +6,7 @@ import ManagerDashboard from './pages/manager/ManagerDashboard'
 import EmployeeDashboard from './pages/employee/EmployeeDashboard'
 import Scheduler from './pages/manager/Scheduler'
 import CCTipEntry from './pages/manager/CCTipEntry'
+import BookkeeperExport from './pages/manager/BookkeeperExport'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/employee" element={<EmployeeDashboard />} />
       <Route path="/scheduler" element={<Scheduler />} />
       <Route path="/cc-tips" element={<CCTipEntry />} />
+      <Route path="/export" element={<BookkeeperExport />} />
     </Routes>
   )
 }
