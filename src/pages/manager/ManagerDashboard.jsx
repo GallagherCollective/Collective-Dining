@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Clock, Save, ChevronDown } from 'lucide-react'
+import { Clock, Save, ChevronDown, CalendarDays } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const COPPER = '#A06535'
 const DARK = '#2B2B2B'
@@ -39,6 +40,7 @@ function calcNet(emp) {
 }
 
 export default function ManagerDashboard() {
+  const navigate = useNavigate()
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
   const [staff, setStaff] = useState(initialStaff)
   const [saved, setSaved] = useState(false)
@@ -81,6 +83,7 @@ export default function ManagerDashboard() {
           <div style={{ fontSize: 13, fontWeight: 600, color: '#fff' }}>LJ Power</div>
           <div style={{ fontSize: 10, color: 'rgba(217,195,163,0.5)' }}>Supervisor</div>
         </div>
+        <button onClick={() => navigate('/scheduler')} style={{ background: 'transparent', border: '1px solid rgba(217,195,163,0.2)', borderRadius: 6, padding: '7px 14px', fontSize: 11, color: 'rgba(217,195,163,0.6)', cursor: 'pointer', fontFamily: 'Montserrat, sans-serif', display: 'flex', alignItems: 'center', gap: 6 }}><CalendarDays size={13} /> Weekly Scheduler</button>
       </div>
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '1.5rem' }}>
